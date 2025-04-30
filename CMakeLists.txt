@@ -3,4 +3,4 @@ project(MyProject)
 
 set(CMAKE_CXX_STANDARD 17)
 
-add_executable(my_executable Kalkulatro.cpp)
+add_executable(projekt2 Kalkulatro.cpp)
