@@ -81,7 +81,7 @@ int main()
 
 
     while (!ciag.empty()) {
-        while (!ciag.empty() && ciag.top() == '#');
+        while (!ciag.empty() && ciag.top() == '#')
             ciag.pop();
 
         if (find(znaki.begin(), znaki.end(), ciag.top()) != znaki.end()) {
