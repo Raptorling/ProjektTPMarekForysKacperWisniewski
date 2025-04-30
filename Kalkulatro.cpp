@@ -81,7 +81,7 @@ int main()
 
 
     while (!ciag.empty()) {
-        while (!ciag.empty() and ciag.top() == '#')
+        while (!ciag.empty() && ciag.top() == '#');
             ciag.pop();
 
         if (find(znaki.begin(), znaki.end(), ciag.top()) != znaki.end()) {
@@ -109,14 +109,14 @@ int main()
         int stopien = 0;
         int liczba = 0;
         bool czy_licz = 0;
-        while ( !ciag.empty() and ciag.top() != '#') {
+        while ( !ciag.empty() && ciag.top() != '#') {
             backup.push(ciag.top());
             ciag.pop();
             stopien += 1;
             czy_licz = 1;
         }
-        for (int i = 0; i < stopien and czy_licz; i++) {
-            liczba += (int(backup.top()) - 48) * pow(10,i);
+        for (int i = 0; i < stopien && czy_licz; i++) {
+            liczba += (int(backup.top()) - 48) * int(pow(10,i));
             backup.pop();
         }
         if (czy_licz) {
